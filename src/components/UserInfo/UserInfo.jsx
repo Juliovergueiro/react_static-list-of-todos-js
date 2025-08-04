@@ -8,8 +8,12 @@ export const UserInfo = ({ user }) => (
       {user.name}
     </p>
 
-    <p className="UserInfo__email" data-cy="user-email">
+    <a
+      className="UserInfo__email"
+      data-cy="user-email"
+      href={`mailto:${user.email}`}
+    >
       {user.email}
-    </p>
+    </a>
   </div>
 );

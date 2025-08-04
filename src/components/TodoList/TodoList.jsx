@@ -1,6 +1,6 @@
 import '../../api/todos.json';
 
-import TodoInfo from '../TodoInfo/TodoInfo';
+import { TodoInfo } from '../TodoInfo/TodoInfo';
 
 // Add the required props
 export const TodoList = ({ todos }) => (

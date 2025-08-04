@@ -1,12 +1,15 @@
 // Add the required props
 // export const UserInfo = () => <>UserInfo markup</>;
+import '../../api/users.json';
 
-export const UserInfo = ({ todo }) => (
+export const UserInfo = ({ user }) => (
   <div className="UserInfo">
-    {todo.user && (
-      <div className="UserInfo__user" data-cy="user">
-        <strong>User:</strong> {todo.user.name}
-      </div>
-    )}
+    <p className="UserInfo__name" data-cy="user-name">
+      {user.name}
+    </p>
+
+    <p className="UserInfo__email" data-cy="user-email">
+      {user.email}
+    </p>
   </div>
 );

@@ -5,6 +5,7 @@ export const TodoInfo = ({ todo }) => (
     <h3 className="TodoInfo__title" data-cy="todo-title">
       {todo.title}
     </h3>
+
     {todo.user && <UserInfo user={todo.user} />}
   </div>
 );
